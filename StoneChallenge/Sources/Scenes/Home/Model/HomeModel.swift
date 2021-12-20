@@ -14,7 +14,6 @@ struct HomeModel: Codable {
 }
 
 struct CharactersModel: Codable {
-    var id: Int?
     var name: String?
     var image: String?
     var status: String?

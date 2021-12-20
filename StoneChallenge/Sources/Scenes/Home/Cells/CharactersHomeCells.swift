@@ -13,15 +13,15 @@ class CharactersHomeCells: UICollectionViewCell {
     struct Constant {
         static let padding16: CGFloat = 16
         static let padding6: CGFloat = 6
-        static let width: CGFloat = 200
-        static let heigthImage: CGFloat = 300
+        static let width: CGFloat = 240
+        static let heigthImage: CGFloat = 280
         static let heigthLabel: CGFloat = 40
-        static let fontSize: CGFloat = 22
-        static let radius: CGFloat = 6
+        static let fontSize: CGFloat = 24
+        static let radius: CGFloat = 8
     }
     
     struct Data {
-        let image: UIImage
+        let imageUrl: URL
         let name: String
     }
     
@@ -39,6 +39,11 @@ class CharactersHomeCells: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    func setup(data: Data) {
+        imageView.kf.setImage(with: data.imageUrl)
+        nameLabel.text = data.name
     }
 }
 
@@ -67,7 +72,7 @@ extension CharactersHomeCells: ViewCode {
     }
     
     func additionalSettings() {
-        
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
 }
 
@@ -79,19 +84,18 @@ extension CharactersHomeCells {
             let imageView = UIImageView()
         imageView.image = UIImage(systemName: "house")
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = .yellow
         imageView.layer.cornerRadius = Constant.radius
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         return imageView
     }
     
     private func buildLabel() -> UILabel {
             let label = UILabel()
-        label.text = "Personagem"
         label.textAlignment = .center
         label.font = UIFont(name: "Creepster-Regular", size: Constant.fontSize)
         label.textColor = .systemGreen
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.backgroundColor = .white
         return label
     }
 }

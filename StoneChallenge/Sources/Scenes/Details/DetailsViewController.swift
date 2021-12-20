@@ -12,12 +12,16 @@ import UIKit
 class DetailsViewController: GenericsViewController<DetailsView> {
     
     // MARK: - Properties
-    
+    var viewModel: DetailsViewModel?
     
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Details"
+        guard let details = viewModel?.details else {
+            return
+        }
+        contentView.setup(data: details)
     }
 }

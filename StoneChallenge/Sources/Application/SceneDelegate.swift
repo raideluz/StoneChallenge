@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let homeViewModel = HomeViewModel()
         homeViewModel.viewController = homeViewController
         homeViewController.viewModel = homeViewModel
-        let controller = CustomNavigationController(rootViewController: homeViewController)
+        let controller = UINavigationController(rootViewController: homeViewController)
 
         window?.rootViewController = controller
         window?.makeKeyAndVisible()

@@ -10,7 +10,7 @@ class HomeViewController: GenericsViewController<HomeView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Personagens"
+        title = "Characters"
         contentView.setup(dataSource: self, delegate: self)
         viewModel?.getCharacters()
     }
@@ -26,10 +26,15 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // dequeue the standard cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CharactersHomeCells
         
-        cell.contentView.backgroundColor = .systemPink
+        guard
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CharactersHomeCells,
+            let data = viewModel?.getDataForIndex(index: indexPath)
+        else {
+            return UICollectionViewCell()
+        }
+        
+        cell.setup(data: data)
         return cell
     }
 }
@@ -37,7 +42,6 @@ extension HomeViewController: UICollectionViewDataSource {
 extension HomeViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let viewController = DetailsViewController()
-        navigationController?.pushViewController(viewController, animated: true)
+        viewModel?.didSelectItemAt(indexPath)
     }
 }

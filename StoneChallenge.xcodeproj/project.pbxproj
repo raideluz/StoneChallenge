@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1125FCF0250874AD390F525 /* Pods_StoneChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790F63636DF74BBA5C9597D5 /* Pods_StoneChallenge.framework */; };
 		C1D0693C2767DA8B00883CE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0693B2767DA8B00883CE8 /* AppDelegate.swift */; };
 		C1D0693E2767DA8B00883CE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0693D2767DA8B00883CE8 /* SceneDelegate.swift */; };
 		C1D069452767DA8C00883CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D069442767DA8C00883CE8 /* Assets.xcassets */; };
 		C1D069482767DA8C00883CE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D069462767DA8C00883CE8 /* LaunchScreen.storyboard */; };
 		C1D069552767DE6800883CE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D069542767DE6800883CE8 /* HomeViewController.swift */; };
 		F4FC8F99276BC387005D424D /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8F98276BC387005D424D /* ViewCode.swift */; };
-		F4FC8FA0276BD35F005D424D /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8F9F276BD35F005D424D /* CustomNavigationController.swift */; };
 		F4FC8FA5276CE304005D424D /* CharactersHomeCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FA4276CE304005D424D /* CharactersHomeCells.swift */; };
 		F4FC8FA9276D3619005D424D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FA8276D3619005D424D /* HomeModel.swift */; };
-		F4FC8FAF276E62BB005D424D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FAE276E62BB005D424D /* DetailsViewController.swift */; };
 		F4FC8FCC276EA9C9005D424D /* Creepster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4FC8FCB276EA9C9005D424D /* Creepster-Regular.ttf */; };
 		F4FC8FD4276EB94A005D424D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FD3276EB94A005D424D /* HomeView.swift */; };
 		F4FC8FD7276EC927005D424D /* GenericsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FD6276EC927005D424D /* GenericsViewController.swift */; };
 		F4FC8FDA276ECD52005D424D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FD9276ECD52005D424D /* HomeViewModel.swift */; };
 		F4FC8FDD276ED2A2005D424D /* fonteApp.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4FC8FDC276ED2A2005D424D /* fonteApp.ttf */; };
-		F4FC8FE4276FFA70005D424D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FE3276FFA6F005D424D /* DetailsView.swift */; };
 		F4FC8FE82770A303005D424D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FE72770A303005D424D /* NetworkManager.swift */; };
+		F4FC8FFB2770E47E005D424D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FF62770E47E005D424D /* DetailsView.swift */; };
+		F4FC8FFC2770E47E005D424D /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FF82770E47E005D424D /* DetailsCell.swift */; };
+		F4FC8FFD2770E47E005D424D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FF92770E47E005D424D /* DetailsViewModel.swift */; };
+		F4FC8FFE2770E47E005D424D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FC8FFA2770E47E005D424D /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		790F63636DF74BBA5C9597D5 /* Pods_StoneChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoneChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F35DFF10D9A2990A678779C /* Pods-StoneChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoneChallenge.debug.xcconfig"; path = "Target Support Files/Pods-StoneChallenge/Pods-StoneChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		C1D069382767DA8B00883CE8 /* StoneChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoneChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D0693B2767DA8B00883CE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1D0693D2767DA8B00883CE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,18 +38,20 @@
 		C1D069472767DA8C00883CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1D069492767DA8C00883CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1D069542767DE6800883CE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E958B6FAA51CDD4D71A99D57 /* Pods-StoneChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoneChallenge.release.xcconfig"; path = "Target Support Files/Pods-StoneChallenge/Pods-StoneChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		F4FC8F98276BC387005D424D /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
-		F4FC8F9F276BD35F005D424D /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		F4FC8FA4276CE304005D424D /* CharactersHomeCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersHomeCells.swift; sourceTree = "<group>"; };
 		F4FC8FA8276D3619005D424D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
-		F4FC8FAE276E62BB005D424D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		F4FC8FCB276EA9C9005D424D /* Creepster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Creepster-Regular.ttf"; sourceTree = "<group>"; };
 		F4FC8FD3276EB94A005D424D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F4FC8FD6276EC927005D424D /* GenericsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsViewController.swift; sourceTree = "<group>"; };
 		F4FC8FD9276ECD52005D424D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F4FC8FDC276ED2A2005D424D /* fonteApp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fonteApp.ttf; sourceTree = "<group>"; };
-		F4FC8FE3276FFA6F005D424D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		F4FC8FE72770A303005D424D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F4FC8FF62770E47E005D424D /* DetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		F4FC8FF82770E47E005D424D /* DetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		F4FC8FF92770E47E005D424D /* DetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		F4FC8FFA2770E47E005D424D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +59,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1125FCF0250874AD390F525 /* Pods_StoneChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92AB4656D9C7986459CDDC22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				790F63636DF74BBA5C9597D5 /* Pods_StoneChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1D0692F2767DA8B00883CE8 = {
 			isa = PBXGroup;
 			children = (
 				C1D0693A2767DA8B00883CE8 /* StoneChallenge */,
 				C1D069392767DA8B00883CE8 /* Products */,
+				E74BE4BAA7C7684B3D117392 /* Pods */,
+				92AB4656D9C7986459CDDC22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		E74BE4BAA7C7684B3D117392 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F35DFF10D9A2990A678779C /* Pods-StoneChallenge.debug.xcconfig */,
+				E958B6FAA51CDD4D71A99D57 /* Pods-StoneChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F4FC8F96276BC342005D424D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +173,6 @@
 		F4FC8F9E276BD2FA005D424D /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F4FC8F9F276BD35F005D424D /* CustomNavigationController.swift */,
 				F4FC8FD6276EC927005D424D /* GenericsViewController.swift */,
 			);
 			path = Components;
@@ -169,15 +194,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F4FC8FAC276D3957005D424D /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				F4FC8FAE276E62BB005D424D /* DetailsViewController.swift */,
-				F4FC8FE3276FFA6F005D424D /* DetailsView.swift */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
 		F4FC8FB6276E9F88005D424D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +206,8 @@
 		F4FC8FD2276EB902005D424D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F4FC8FF52770E47E005D424D /* Details */,
 				C1D069532767DE4E00883CE8 /* Home */,
-				F4FC8FAC276D3957005D424D /* Details */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -204,6 +220,25 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		F4FC8FF52770E47E005D424D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				F4FC8FF62770E47E005D424D /* DetailsView.swift */,
+				F4FC8FF72770E47E005D424D /* Cell */,
+				F4FC8FF92770E47E005D424D /* DetailsViewModel.swift */,
+				F4FC8FFA2770E47E005D424D /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		F4FC8FF72770E47E005D424D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F4FC8FF82770E47E005D424D /* DetailsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1D0694C2767DA8C00883CE8 /* Build configuration list for PBXNativeTarget "StoneChallenge" */;
 			buildPhases = (
+				A96D45583775CB5DB114A260 /* [CP] Check Pods Manifest.lock */,
 				C1D069342767DA8B00883CE8 /* Sources */,
 				C1D069352767DA8B00883CE8 /* Frameworks */,
 				C1D069362767DA8B00883CE8 /* Resources */,
+				932ED09E4598A2151EB1B1EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +307,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		932ED09E4598A2151EB1B1EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoneChallenge/Pods-StoneChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoneChallenge/Pods-StoneChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoneChallenge/Pods-StoneChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A96D45583775CB5DB114A260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StoneChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1D069342767DA8B00883CE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -277,17 +356,18 @@
 			files = (
 				F4FC8FD4276EB94A005D424D /* HomeView.swift in Sources */,
 				F4FC8FDA276ECD52005D424D /* HomeViewModel.swift in Sources */,
+				F4FC8FFC2770E47E005D424D /* DetailsCell.swift in Sources */,
 				F4FC8FA5276CE304005D424D /* CharactersHomeCells.swift in Sources */,
 				F4FC8FE82770A303005D424D /* NetworkManager.swift in Sources */,
 				F4FC8FA9276D3619005D424D /* HomeModel.swift in Sources */,
+				F4FC8FFB2770E47E005D424D /* DetailsView.swift in Sources */,
 				C1D0693C2767DA8B00883CE8 /* AppDelegate.swift in Sources */,
-				F4FC8FE4276FFA70005D424D /* DetailsView.swift in Sources */,
-				F4FC8FAF276E62BB005D424D /* DetailsViewController.swift in Sources */,
-				F4FC8FA0276BD35F005D424D /* CustomNavigationController.swift in Sources */,
 				F4FC8F99276BC387005D424D /* ViewCode.swift in Sources */,
 				C1D0693E2767DA8B00883CE8 /* SceneDelegate.swift in Sources */,
+				F4FC8FFD2770E47E005D424D /* DetailsViewModel.swift in Sources */,
 				F4FC8FD7276EC927005D424D /* GenericsViewController.swift in Sources */,
 				C1D069552767DE6800883CE8 /* HomeViewController.swift in Sources */,
+				F4FC8FFE2770E47E005D424D /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +503,7 @@
 		};
 		C1D0694D2767DA8C00883CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F35DFF10D9A2990A678779C /* Pods-StoneChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +533,7 @@
 		};
 		C1D0694E2767DA8C00883CE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E958B6FAA51CDD4D71A99D57 /* Pods-StoneChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

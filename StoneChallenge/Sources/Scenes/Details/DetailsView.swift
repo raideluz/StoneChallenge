@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - Class
+
 class DetailsView: UIView {
     
     struct Constant {
@@ -18,6 +20,19 @@ class DetailsView: UIView {
         static let width: CGFloat = 200
         static let heigthImage: CGFloat = 300
         static let heigthLabel: CGFloat = 40
+        static let species = "Species: "
+        static let gender  = "Gender: "
+        static let type = "Type: "
+        static let status = "Status: "
+    }
+    
+    struct Data {
+        let name: String
+        let image: URL
+        let species: String
+        let gender: String
+        let type: String
+        let status: String
     }
     
     // MARK: - Properties
@@ -38,6 +53,16 @@ class DetailsView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+    
+    func setup(data: Data) {
+        nameLabel.text = data.name
+        imageView.kf.setImage(with: data.image)
+        speciesLabel.text = Constant.species + data.species
+        genderLabel.text = Constant.gender + data.gender
+        statusLabel.text = Constant.status + data.status
+        typeLabel.text = Constant.type + data.type
+        typeLabel.isHidden = data.type == "" ? true : false
     }
 }
 
@@ -77,27 +102,24 @@ extension DetailsView: ViewCode {
         genderLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: Constant.padding16).isActive = true
         genderLabel.heightAnchor.constraint(equalToConstant: Constant.heigthLabel).isActive = true
         
-        typeLabel.topAnchor.constraint(equalTo: genderLabel.bottomAnchor, constant: Constant.padding6).isActive = true
+        statusLabel.topAnchor.constraint(equalTo: genderLabel.bottomAnchor, constant: Constant.padding6).isActive = true
+        statusLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -Constant.padding16).isActive = true
+        statusLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: Constant.padding16).isActive = true
+        statusLabel.heightAnchor.constraint(equalToConstant: Constant.heigthLabel).isActive = true
+        
+        typeLabel.topAnchor.constraint(equalTo: statusLabel.bottomAnchor, constant: Constant.padding6).isActive = true
         typeLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -Constant.padding16).isActive = true
         typeLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: Constant.padding16).isActive = true
         typeLabel.heightAnchor.constraint(equalToConstant: Constant.heigthLabel).isActive = true
         
-        statusLabel.topAnchor.constraint(equalTo: typeLabel.bottomAnchor, constant: Constant.padding6).isActive = true
-        statusLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -Constant.padding16).isActive = true
-        statusLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: Constant.padding16).isActive = true
-        statusLabel.heightAnchor.constraint(equalToConstant: Constant.heigthLabel).isActive = true
     }
     
     func additionalSettings() {
-        backgroundColor = .black
+        backgroundColor = .systemBackground
         nameLabel.text = "Nome Personagem"
         nameLabel.textColor = .systemGreen
         nameLabel.textAlignment = .center
         nameLabel.font = UIFont(name: "Creepster-Regular", size: 24)
-        speciesLabel.text = "Species: "
-        genderLabel.text = "Gender: "
-        typeLabel.text = "Type: "
-        statusLabel.text = "Status: "
     }
 }
 
@@ -109,7 +131,7 @@ extension DetailsView {
         let label = UILabel()
         label.font = UIFont(name: "Creepster-Regular", size: Constant.fontSize)
         label.textAlignment = .left
-        label.textColor = .white
+        label.textColor = .systemGreen
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }

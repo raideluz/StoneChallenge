@@ -47,7 +47,8 @@ extension HomeView: ViewCode {
     }
     
     func additionalSettings() {
-        backgroundColor = .white
+        backgroundColor = .systemBackground
+        collectionView.backgroundColor = .systemBackground
         self.collectionView.register(CharactersHomeCells.self, forCellWithReuseIdentifier: "cell")
     }
 }
@@ -60,7 +61,6 @@ extension HomeView {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
         layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-        layout.minimumInteritemSpacing = 0.0
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false

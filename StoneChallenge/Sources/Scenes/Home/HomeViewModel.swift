@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 // MARK: - Class
  
@@ -45,8 +46,31 @@ class HomeViewModel {
         }
     }
     
-    func getDataForIndex(index: IndexPath) -> CharactersHomeCells.Data {
+    func getDataForIndex(index: IndexPath) -> CharactersHomeCells.Data? {
         let character = characters[index.row]
-        return .init(image: UIImage(), name: character.name ?? "")
+        guard let url = URL(string: character.image ?? ""),
+              let name = character.name else {
+            return nil
+        }
+        return .init(imageUrl: url, name: name)
+    }
+    
+    func didSelectItemAt(_ index: IndexPath) {
+        let character = characters[index.row]
+        guard let url = URL(string: character.image ?? "") else {
+            return
+        }
+        let details = DetailsView.Data(name: character.name ?? "",
+                                       image: url,
+                                       species: character.species ?? "",
+                                       gender: character.gender ?? "",
+                                       type: character.type ?? "",
+                                       status: character.status ?? "")
+        let viewModel = DetailsViewModel(details: details)
+        
+        let viewController = DetailsViewController()
+        viewController.viewModel = viewModel
+        
+        self.viewController?.navigationController?.pushViewController(viewController, animated: true)
     }
 }
